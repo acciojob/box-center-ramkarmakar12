@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Box</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .center-box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* To allow position-based alignment */
+        }
+
+        .center-box p {
+            color: purple;
+            font-size: 16px;
+            text-align: center;
+            margin: 0;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="center-box">
+        <p>This is center.</p>
+    </div>
 </body>
-
 </html>
